@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import InputField from '../pages/components/InputField';
+import InputField from './components/InputField';
 
 function Home() {
   const newRef = useRef();
@@ -8,6 +8,7 @@ function Home() {
   const focusInput = () => {
     newRef.current.focus();
   };
+
   const settingValue = () => {
     setValues(newRef.current.value);
   };
